@@ -1,0 +1,2 @@
+alias sb='source ~/.bash_profile'
+alias lsa='ls -la'

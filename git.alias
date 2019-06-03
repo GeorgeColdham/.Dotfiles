@@ -1,0 +1,4 @@
+alias add="git add ."
+alias reset-branch="git reset --hard HEAD"
+alias push="git push"
+alias pull="git pull"

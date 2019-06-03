@@ -1,0 +1,6 @@
+alias s="npm start"
+alias b="npm build"
+alias i="npm install"
+alias t="npm run test"
+alias tu="npm run unit-tests"
+alias tuw="npm run unit-tests:watch"

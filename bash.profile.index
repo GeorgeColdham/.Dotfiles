@@ -1,0 +1,31 @@
+ignoreFiles=("bash.profile.index" "locations" "api.keys"  ".gitignore")
+
+array_contains () {
+    local seeking=$1; shift
+    local in=1
+    for element; do
+        if [[ $element == $seeking ]]; then
+            in=0
+            break
+        fi
+    done
+    return $in
+}
+
+for entry in $(ls ${HOME}/.Dotfiles/);
+do
+  array_contains "$entry" "${ignoreFiles[@]}" && echo ignoring $entry || source ${HOME}/.Dotfiles/$entry
+done
+
+
+
+#for entry in $(ls ${HOME}/.Dotfiles/);
+#do
+#  if ! [ "$entry" = "bash.profile.index" ]
+#  then
+#    source ${HOME}/.Dotfiles/$entry
+#  fi
+#done
+
+
+#if ! [ "$entry" = "bash.profile.index" ]
