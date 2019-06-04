@@ -1,4 +1,4 @@
-ignoreFiles=("bash.profile.index" "README.md" ".gitignore")
+ignoreFiles=("bash.profile.index" "README.md" "newEnvScripts" ".gitignore")
 
 array_contains () {
     local seeking=$1; shift
