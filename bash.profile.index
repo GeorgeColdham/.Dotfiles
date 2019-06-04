@@ -1,4 +1,4 @@
-ignoreFiles=("bash.profile.index" ".gitignore")
+ignoreFiles=("bash.profile.index" "README.md" ".gitignore")
 
 array_contains () {
     local seeking=$1; shift
@@ -14,18 +14,5 @@ array_contains () {
 
 for entry in $(ls ${HOME}/.Dotfiles/);
 do
-  array_contains "$entry" "${ignoreFiles[@]}" && echo ignoring $entry || source ${HOME}/.Dotfiles/$entry
+  array_contains "$entry" "${ignoreFiles[@]}" && : || source ${HOME}/.Dotfiles/$entry
 done
-
-
-
-#for entry in $(ls ${HOME}/.Dotfiles/);
-#do
-#  if ! [ "$entry" = "bash.profile.index" ]
-#  then
-#    source ${HOME}/.Dotfiles/$entry
-#  fi
-#done
-
-
-#if ! [ "$entry" = "bash.profile.index" ]

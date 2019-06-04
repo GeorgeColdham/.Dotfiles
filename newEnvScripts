@@ -1,0 +1,8 @@
+#####
+# Terminal auto hide speed
+
+#defaults write com.apple.dock autohide-time-modifier -int 0;killall Dock
+#defaults write com.apple.dock autohide-time-modifier -float 0.25;killall Dock
+#defaults delete com.apple.dock autohide-time-modifier;killall Dock
+
+#####
