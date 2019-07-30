@@ -1,2 +1,3 @@
 alias sb='source ~/.bash_profile'
 alias lsa='ls -la'
+alias clear="clear && printf '\e[3J'"
